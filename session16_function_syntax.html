@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Hàm</title>
+</head>
+
+<body>
+    <script>
+        // Xây dựng 1 hàm in ra câu xin chào các bạn fukuoka
+        // Hàm có bao nhiêu tham số: 0 tham số
+        //body: in ra câu xin chào các bạn fukuoka
+        /*
+            syntax:
+            function funtionName(param1,...,paramN){
+                body: block statement -> thực hiện tác vụ, chức năng
+            }
+        */
+        function helloFukuoka() {
+            alert("Xin chào các bạn Fukuoka");
+        }
+        /*
+            syntax gọi hàm:
+            functionName(arguments);
+        */
+        helloFukuoka();
+        // Xây dựng 1 hàm có tên là helloPerson, có 1 tham số là tên người cần
+        // được chào        
+        // Gọi hàm
+        let result = helloPerson("Nguyễn Văn A");
+        console.log("result-->", result);
+        // function: hoisting
+        function helloPerson(personName) {
+            alert("Xin chào " + personName);
+            //return: trả về kết quả sau khi thực hiện hàm
+        }
+        // Xây dựng hàm tính tổng 2 số, kết thúc hàm trả về kết quả tổng 2 số
+        function add(number1, number2) {
+            let sum = number1 + number2;
+            // return là kết thúc luôn hàm
+            return sum;
+            // Các câu lệnh sau return sẽ không được thực hiện
+            console.log("Xin chào các bạn");
+        }
+        let total = add(5, 10);
+        console.log("Tổng 2 số -->", total);
+    </script>
+</body>
+
+</html>

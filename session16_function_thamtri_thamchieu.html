@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tham trị và tham chiếu</title>
+</head>
+
+<body>
+    <script>
+        function add(number1, number2) {
+            number1++;
+            let sum = number1 + number2;
+            console.log("Giá trị number1 trong hàm add-->", number1);//number1 = 6
+            return sum;
+        }
+        let number1 = 5;
+        let number2 = 10;
+        // Truyền tham trị --> truyền giá trị --> hàm thực hiện không ảnh hưởng đến giá trị của đối số
+        // Truyền tham trị --> truyền kiểu dữ liệu primitive làm đối số
+        let total = add(number1, number2);
+        console.log("Tổng 2 số là: " + total);
+        console.log("Giá trị number1 sau khi thực hiện hàm add-->", number1);//number1=5
+        function printArray(arr) {
+            // Thay đổi giá trị trực tiếp ở ô nhớ
+            arr[0] = 20;
+            console.log("Mảng ở trong hàm--->", arr);//arr=[20,6,9]
+        }
+        let arr = [3, 6, 9];
+        // Truyền tham chiếu --> truyền địa chỉ ô nhớ chứa mảng
+        // Truyền tham chiếu --> khi đối số có kiểu dữ liệu là reference
+        printArray(arr);
+        console.log("Mảng sau khi thực hiện hàm-->", arr);//arr=[20,6,9]
+    </script>
+</body>
+
+</html>

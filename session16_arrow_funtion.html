@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Arrow function</title>
+</head>
+
+<body>
+    <script>
+        /*
+            syntax:
+            let|const|var funtionName = (param1,...,paramN)=>{
+                body: block statements;
+            }
+        */
+        // Viết arrow function tính tổng 2 số, gọi hàm và tính tổng 2 số 5 và 10
+        let add = (number1, number2) => {
+            let sum = number1 + number2;
+            return sum;
+        }
+        // Gọi hàm tính tổng 5 và 10
+        let total = add(5, 10);
+        console.log("Tổng 2 số là:", total);
+        // Tính tổng 2 số
+        let add1 = (number1, number2) => number1 + number2;
+        // let add1 = (number1,number2)=>{return number1+number2}
+        // Bài tập 1: Sử dụng function bình thường, viết hàm tính tổng 3 số,
+        // Gọi hàm thực hiện tính tổng 3 số 5,10,15 và in kết quả
+        /*
+            Bài tập 2: Sử dụng expression function, viết hàm in ra giá trị 
+            các phần tử của mảng
+        */
+        /*
+            Bài tập 3: Sử dụng arrow funtion, viết hàm tính tích của 2 số,
+            gọi hàm và in ra kết quả tích 2 số 5 và 10
+        */
+    </script>
+</body>
+
+</html>

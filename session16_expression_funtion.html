@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <script>
+        // Expression Function: biểu thức hàm, không có khái niệm hoisting
+        /*
+            let|var|const variableName = funtion(){
+                body: block statement;
+            }
+        */
+        // Xây dựng hàm tính tổng 2 số với expression function
+        let add = function (number1, number2) {
+            return number1 + number2;
+        }
+        // Thực hiện tính tổng 2 số 5 và 10 và in ra tổng 2 số
+        let total = add(5, 10);
+        console.log("Tổng 2 số là: ", total);
+
+    </script>
+</body>
+
+</html>
